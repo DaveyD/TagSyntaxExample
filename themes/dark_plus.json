@@ -1,6 +1,6 @@
 {
 	"name": "Dark+",
-	"include": "./dark_plus.json",
+	"include": "./dark_vs.json",
 	"settings": [
 		{
 			"name": "Types declaration and references",

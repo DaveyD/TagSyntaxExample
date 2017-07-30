@@ -1,0 +1,62 @@
+{
+	"fileTypes": ["prg"],
+	"foldingStartMarker": "^\\s*(?i:(func|function))\\s*.*$",
+	"foldingStopMarker": "^\\s*(?i:(end func|end function))\\s*.*$",
+	"name": "tagxp",
+	"patterns": [
+		{	"name": "meta.comment",
+			"match": "(;)(.*)$",
+			"captures": {
+				"1": { "name": "punctuation.definition.comment" },
+				"2": { "name": "comment.line" }
+			}
+		},
+		{	"name": "meta.function",
+			"match": "^\\s*((?i:function|func))\\s*([a-zA-Z_]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?",
+			"captures": {
+				"1": { "name": "storage.type.function" },
+				"2": { "name": "entity.name.function" },
+				"3": { "name": "punctuation.definition.parameters" },
+				"4": { "name": "variable.parameter.function" },
+				"5": { "name": "punctuation.definition.parameters" }
+			}
+		},
+		{	"name": "storage.type.function",
+			"match": "^\\s*((?i:end function|end func))\\s*\\n?"
+		},
+		{	"name": "meta.type",
+			"match": "^\\s*(?i:(int|string|real|select|pointer|byte|boolean))\\s*(.*)$",
+			"captures": {
+				"1": { "name": "storage.type" },
+				"2": { "name": "variable.other" }
+			}
+		},
+		{	"name": "variable.other",
+			"match": "([a-zA-Z_]\\w*)\\s*(?=(:=|=))"
+		},
+		{	"name": "keyword.control",
+			"match": "\b(?i:if|then|end if|else|for|while|do|end while|end for)\b"
+		},
+		{	"name": "keyword.operator.assignment",
+			"match": "\\+=|\\-=|\\*=|\\/="
+		},
+		{	"name": "keyword.operator.arithmetic",
+			"match": "\\+|\\-|\\*|\\/"
+		},
+		{	"name": "keyword.operator.word",
+			"match": "\\s(and|or|not|mod)\\s"
+		},
+		{	"name": "support.function",
+			"match": "\\s(?i:(sizeof|len|range|tail|descend|StartLine|EndLine|NextLine|TopPage|BotPage|PrevPage|NextPage|SetSel|FindPage|chr|fail|odd|NumToHeb|ModalDlg|SetDlgText|GetDlgText|SetCheck|GetCheck|var|GetSel|GetKeyValue|IsGlobal|asc|depth|LineCount|find|replace|FindTag|rFindTag|GetTagIndex|GetTagTable|StartPara|NextPara|FindBreak|GetPage|GetAttr|GetPasteInfo|ActiveText|IsFile|GetFileString|SetFileString|GetVarName|GetSystemMetrics|OneStep|ReplaceTag|GetStyleName|xdist|tightness|SetPenalty|BreakPenalty|GetRegistration|LibFunc|exec|wait|GetFileName|ActivePage|GetDate|GetTime|ObjectChanged|sqrt|GetNoteModulus|GetProp|SetDlgScript|DlgEnable|SetDlgFocus|GetDlgFocus|DlgHit|GetWindowPos|GetTagDir|KeyDown|GetViewSel|function|CopyArray|FillArray|FindOptions|rdec))"
+		},
+		{	"name": "string.quoted.double",
+			"match": "\".*\""
+		},
+		{	"name": "string.quoted.single",
+			"match": "'.*'"
+		}
+
+	],
+	"repository": {},
+	"scopeName": "source.tagxp"
+}

@@ -1,0 +1,13 @@
+{
+	"name": "tagxp",
+	"include": "./dark_plus.json",
+	"settings": [
+		{
+			"name": "TagXP Functions",
+			"scope": "support.function",
+			"settings": {
+				"foreground": "#F92672"
+			}
+		}
+	]
+}

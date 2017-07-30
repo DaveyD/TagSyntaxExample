@@ -2,7 +2,7 @@
     "name": "tagxp",
     "displayName": "tag-xp",
     "description": "An extension for TagXP syntax highlighting.",
-    "icon": "icon/TAG Icon 2a.png",
+    "icon": "icon/TAG Icon 2.png",
     "version": "0.0.1",
     "publisher": "DMD",
 	"repository": {

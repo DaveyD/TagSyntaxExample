@@ -25,10 +25,10 @@
         "grammars": [{
             "language": "tagxp",
             "scopeName": "source.tagxp",
-            "path": "./syntaxes/log.tmLanguage.json"
+            "path": "./syntaxes/tagxp.tmLanguage.json"
         }],
         "themes": [{
-            "label": "Dark+TagXP",
+            "label": "Mild Dark+TagXP",
             "language": "tagxp",
             "uiTheme": "vs-dark",
             "path": "./themes/tagxp-theme.json"

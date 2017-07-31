@@ -4,9 +4,9 @@
 	"settings": [
 		{
 			"name": "TagXP Functions",
-			"scope": "support.function.tagxp2",
+			"scope": "support.function",
 			"settings": {
-				"foreground": "#87B825"
+				"foreground": "#D46A8F"
 			}
 		}
 	]
